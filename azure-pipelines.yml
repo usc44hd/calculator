@@ -21,5 +21,3 @@ steps:
     npm test
     npm audit
   displayName: 'npm install and build and test'
-
-
