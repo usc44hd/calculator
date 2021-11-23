@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  default
+  AZ-Win-Agent
 
 steps:
 - task: NodeTool@0
