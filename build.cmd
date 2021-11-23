@@ -1,3 +1,3 @@
 call npm install
 call npm build 
-call npm test 
+call npm install && npm test 
