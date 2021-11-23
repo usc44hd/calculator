@@ -18,6 +18,8 @@ steps:
 - script: |
     npm install
     npm run build
+  displayName: 'npm install and build and'
+
+- script: |
     npm test
-    npm audit
-  displayName: 'npm install and build and test'
+  displayName: 'npm test'
