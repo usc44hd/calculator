@@ -1,3 +1,3 @@
-npm install
-npm build 
-npm test 
+call npm install
+call npm build 
+call npm test 
