@@ -17,7 +17,6 @@ steps:
 
 - script: |
     npm install
-    npm audit fix --force
     npm run build
     npm test
   displayName: 'npm install and build and test'
