@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  AZ-Lnx-Agent
+  default
 
 steps:
 - task: NodeTool@0
@@ -16,7 +16,7 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    npm install 
-    npm build 
-    npm test   
+    call npm install 
+    call npm build 
+    call npm test   
   displayName: 'npm install and build and test'
