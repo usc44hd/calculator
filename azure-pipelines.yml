@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  AZ-Win-Agent
+  Default
 
 steps:
 - task: NodeTool@0
@@ -24,3 +24,9 @@ steps:
     npm install
     npm test
   displayName: 'npm test'
+- task: Npm@1
+  displayName: 'Run Tests'
+  inputs:
+    command: 'custom'
+    workingDir: "folder where your package.json exists"
+    customCommand: 'test'
