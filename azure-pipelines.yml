@@ -14,9 +14,6 @@ steps:
   inputs:
     versionSpec: '14.x'
   displayName: 'Install Node.js'
-
-- script: |
-    call npm install
-    call npm build 
-    call npm install & npm test   
+- script: build.cmd
+  workingDirectory: $(Agent.BuildDirectory)
   displayName: 'npm install and build and test'
